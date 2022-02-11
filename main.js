@@ -35,7 +35,7 @@ function gotResults(error, results) {
 
     document.getElementById('lblLabel').innerHTML = "Label:" + results[0].label;
     
-    document.getElementById('lblConfidence').innerHTML = "Confidence: " + Math.random(results[0].confidence * 100) + "%";
+    document.getElementById('lblConfidence').innerHTML = "Confidence: " + Math.round(results[0].confidence * 100) + "%";
 
     utterThis = new SpeechSynthesisUtterance(results[0].label);
     synth.speak(utterThis);

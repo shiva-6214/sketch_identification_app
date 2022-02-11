@@ -1,0 +1,52 @@
+.heading_div {
+    background-color: blanchedalmond;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#show_sketch {
+    float: right;
+    margin-top: -40px;
+    margin-right: 15px;
+}
+
+canvas {
+    border: 3px solid black;
+    border-radius: 10px;
+    animation-name: canvas_something;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    margin-top: 45px;
+}
+
+@keyframes canvas_something {
+    from{box-shadow: -10px -10px 5px red;}
+    to{box-shadow: 10px 10px 5px orange;}
+}
+
+#heading {
+    font-family: 'Supermercado One', cursive;
+    font-size: 30px;
+}
+
+#lblLabel{
+    font-family: 'Supermercado One', cursive;
+    font-size: 17px;
+}
+
+#lblConfidence {
+    font-family: 'Supermercado One', cursive;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(241, 238, 204);
+    color: black;
+    text-align: center;
+}
